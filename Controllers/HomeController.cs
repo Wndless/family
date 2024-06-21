@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace family.Controllers
@@ -8,6 +9,14 @@ namespace family.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+
+        public IActionResult _Footer()
+        {
+            List<string> familys = new List<string> { "엄마", "아빠", "아들", "딸" };
+
+            return PartialView("footer", familys);
         }
     }
 }

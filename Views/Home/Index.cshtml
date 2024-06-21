@@ -1,11 +1,14 @@
 ﻿@{
     Layout = "_Layout";
 }
-
 <div class="container">
+    @await Html.PartialAsync("_Menu", new List<string> { "엄마", "아빠", "아들", "딸" })
     <div class="hero">
         <h2>HAPPY OUR HOME</h2>
         <p>I wanny be happy and we make family. <br />Jesus, Please give us Happiness, healthy and Many Money :)</p>
         <button type="button" onclick="location.href='https://www.youtube.com/watch?v=JoiUC8j7bv4'">Watch Videos</button>
     </div>
 </div>
+@* <div>
+    @await Html.PartialAsync("_Footer")
+</div> *@

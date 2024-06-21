@@ -1,0 +1,15 @@
+﻿@model List<string>
+
+<div class="container">
+    <div class="header">
+        <h1><a href="#">FAMILY</a></h1>
+        <div class="nav">
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li><a href="#">@item</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

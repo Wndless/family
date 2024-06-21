@@ -1,29 +1,18 @@
-﻿@using System.Web;
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+
+@{
+    <link rel="stylesheet" href="/css/style.min.css" />
+}
 
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" initial-scale="1.0" />
-        <link rel="stylesheet" href="/css/site.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-    <title>Welcome to the Donghoons's Page</title>
+        <title>Welcome to the Donghoons's Page</title>
     </head>
     <body>
-        <header>
-            <ul>
-                @Html.Ac
-                <li>Dad</li>
-                <li>Mom</li>
-                <li>Son</li>
-                <li>Daughter</li>
-            </ul>
-        </header>
-        <main>
-            @RenderBody()
-        </main>
-        <footer>
-            2023-2024 Yohye CopyRight
-        </footer>
+        @RenderBody()
     </body>
 </html>
