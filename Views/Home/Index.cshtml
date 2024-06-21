@@ -1,14 +1,14 @@
 ﻿@{
     Layout = "_Layout";
 }
+
 <div class="container">
-    @await Html.PartialAsync("_Menu", new List<string> { "엄마", "아빠", "아들", "딸" })
+    <!-- Header -->
+    @Html.Partial("_Menu", new List<string> { "엄마", "아빠", "아들", "딸" })
     <div class="hero">
-        <h2>HAPPY OUR HOME</h2>
-        <p>I wanny be happy and we make family. <br />Jesus, Please give us Happiness, healthy and Many Money :)</p>
+        <h2>행복한 우리 가족</h2>
+        <p>김동훈♡황옥주♡김태건♡김태린<br />힘든일이라도 함께라면 모두 이겨낼수 있어 사랑해 ♡</p>
         <button type="button" onclick="location.href='https://www.youtube.com/watch?v=JoiUC8j7bv4'">Watch Videos</button>
     </div>
+    @Html.Partial("_Footer")
 </div>
-@* <div>
-    @await Html.PartialAsync("_Footer")
-</div> *@
