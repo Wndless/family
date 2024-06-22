@@ -1,0 +1,25 @@
+﻿@using Family.ModelProperty
+
+@{
+    Layout = "_Layout";
+}
+
+@{
+    List<FamilyData> datas = new List<FamilyData>();
+
+    datas.Add(new FamilyData() { menu_name = "mom", menu_const_name = "엄마", label_name = "옥주" });
+    datas.Add(new FamilyData() { menu_name = "dad", menu_const_name = "아빠", label_name = "동훈" });
+    datas.Add(new FamilyData() { menu_name = "son", menu_const_name = "아들", label_name = "태건" });
+    datas.Add(new FamilyData() { menu_name = "daughter", menu_const_name = "딸", label_name = "태린" });
+}
+
+<div class="container">
+    <!-- Header -->
+    @Html.Partial("_Menu", datas)
+    <div class="hero">
+        <h2>행복한 우리 가족</h2>
+        <p>김동훈♡황옥주♡김태건♡김태린<br />힘든일이라도 함께라면 모두 이겨낼수 있어 사랑해 ♡</p>
+        <button type="button" onclick="location.href='https://www.youtube.com/watch?v=JoiUC8j7bv4'">Watch Videos</button>
+    </div>
+    @Html.Partial("_Footer")
+</div>

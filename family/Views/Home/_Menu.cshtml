@@ -1,0 +1,15 @@
+﻿@using Family.ModelProperty
+
+@model List<FamilyData>
+
+<div class="header">
+    <h1><a href="#">FAMILY</a></h1>
+    <div class="nav">
+        <ul>
+            @foreach (FamilyData item in Model)
+            {
+                <li><a href="~/@item.menu_name">@item.menu_const_name</a></li>
+            }
+        </ul>
+    </div>
+</div> 
