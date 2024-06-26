@@ -1,8 +1,9 @@
-﻿@using System.Web.Mvc
-@using System.Web.Mvc.Html
+﻿@using Family.ModelProperty
+@model List<FamilyData>
 
 @{
-    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/Common.min.css" />
+    <script src="https://kit.fontawesome.com/c6450646d5.js" crossorigin="anonymous"></script>
 }
 
 <!DOCTYPE html>
@@ -11,8 +12,32 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" initial-scale="1.0" />
         <title>Welcome to the Donghoons's Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
+        <header>
+            <div class="menubar">
+                <h1><a href="~/">FAMILY</a></h1>
+                <div class="nav">
+                    <ul>
+                        @foreach (FamilyData item in Model)
+                        {
+                            <li><a href="~/@item.menu_name">@item.menu_const_name</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </header>
         @RenderBody()
+        <div class="footer">
+            <h3>2024-2025 CopyRight by Yohye</h3>
+            Phone: +82 10-2724-2991
+            <br />
+        <a href="mailto:huru89@naver.com">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://github.com/wndless">
+            <i class="fa-brands fa-github"></i>
+        </a>
     </body>
 </html>

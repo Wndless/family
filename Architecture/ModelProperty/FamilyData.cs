@@ -12,5 +12,8 @@ namespace Family.ModelProperty
 
         // 라벨명 (실명)
         public string label_name { get; set; } = string.Empty;
+
+        // 메뉴 활성화 여부
+        public bool IsActive { get; set; } = false;
     }
 }

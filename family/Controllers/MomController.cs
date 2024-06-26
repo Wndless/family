@@ -1,4 +1,5 @@
-﻿
+﻿using Family.Model;
+using Family.ModelProperty;
 using Microsoft.AspNetCore.Mvc;
 
 namespace family.Controllers
@@ -7,7 +8,9 @@ namespace family.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<FamilyData> model = FamilyModel.GetMenu("mom");
+
+            return View(model);
         }
     }
 }

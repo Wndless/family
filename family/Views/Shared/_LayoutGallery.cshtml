@@ -1,0 +1,43 @@
+﻿@using Family.ModelProperty
+
+<link rel="stylesheet" href="/css/Common.min.css" />
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href="~/">FAMILY</a></h1>
+            <div class="nav">
+                <ul>
+                    @foreach (FamilyData item in Model)
+                    {
+                        <li><a href="~/@item.menu_name">@item.menu_const_name</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+        @RenderBody()
+        <div class="footer">
+                <h2>2024-2025 CopyRight by Yohye</h2>
+            </div>
+        </div>
+    <div>
+</body>
+</html>
+
+@{
+    // 내일할거    
+    // 백그라운드를 첫번째 사진으로 변경 -> 시간지날때마다 랜덤하게 바뀌는것도 해보자
+    // DB 연동.. 준철이한테 부탁하던가 SQlite로 일단해보던가
+    
+
+    // 갤러리 게시판 CSS 작업
+}

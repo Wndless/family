@@ -4,5 +4,29 @@
     "inputFiles": [
       "wwwroot/css/Gallery/Index.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Gallary/Gallary.min.js",
+    "inputFiles": [
+      "wwwroot/js/Gallary/Gallary.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Gallery/Gallery.min.css",
+    "inputFiles": [
+      "wwwroot/css/Gallery/Gallery.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Home/Home.min.css",
+    "inputFiles": [
+      "wwwroot/css/Home/Home.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Common.min.css",
+    "inputFiles": [
+      "wwwroot/css/Common.css"
+    ]
   }
 ]
