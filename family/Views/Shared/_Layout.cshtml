@@ -2,7 +2,7 @@
 @model List<FamilyData>
 
 @{
-    <link rel="stylesheet" href="/css/Common.min.css" />
+    <link rel="stylesheet" href="/css/Common.min.css?v=@DateTime.Now.ToString("yyyyMMddHHmmss")" />
     <script src="https://kit.fontawesome.com/c6450646d5.js" crossorigin="anonymous"></script>
 }
 
@@ -22,7 +22,14 @@
                     <ul>
                         @foreach (FamilyData item in Model)
                         {
-                            <li><a href="~/@item.menu_name">@item.menu_const_name</a></li>
+                            string tag = string.Empty;
+
+                            if(item.IsActive)
+                            {
+                                tag = "_on";
+                            }
+
+                            <li><a class="@tag"  href="~/@item.menu_name">@item.menu_const_name</a></li>
                         }
                     </ul>
                 </div>
@@ -39,5 +46,6 @@
         <a href="https://github.com/wndless">
             <i class="fa-brands fa-github"></i>
         </a>
+    
     </body>
 </html>

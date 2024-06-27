@@ -10,6 +10,8 @@ namespace family.Controllers
         {
             List<FamilyData> model = FamilyModel.GetMenu("mom");
 
+            ViewBag.Model = model;
+
             return View(model);
         }
     }

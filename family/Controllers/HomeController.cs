@@ -8,7 +8,7 @@ namespace family.Controllers
     {
         public IActionResult Index()
         {
-            List<FamilyData> model = FamilyModel.GetMenu("mom");
+            List<FamilyData> model = FamilyModel.GetMenu("");
             
             return View(model);
         }
