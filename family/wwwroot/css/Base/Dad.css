@@ -1,0 +1,19 @@
+﻿.board_item {
+    border: 1px solid black;
+    margin: 1px;
+    width: 100%;
+    display:flex;
+}
+
+.board_item div {
+    justify-content: space-around;
+}
+
+.board_item a {
+    color : blue;
+}
+
+.board_item .section {
+    border-style : groove;
+    text-align:center;
+}

@@ -28,5 +28,11 @@
     "inputFiles": [
       "wwwroot/css/Common.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Base/Dad.min.css",
+    "inputFiles": [
+      "wwwroot/css/Base/Dad.css"
+    ]
   }
 ]

@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "../Shared/_Layout";
+}
+
+<link rel="stylesheet" href="/css/Base/Dad.min.css"/>
+
+<div class="container">
+    <ul>
+        @for(int i=0; i<10; i++)
+        {
+            <li>
+                <div class="board_item">
+                    <div class="section">
+                        야하하하
+                    </div>
+                    <div class="board_info">
+                        <a href="#">게시글 제목 @i</a>
+                        <input type="checkbox" id="like" />
+                        <div class="reply">@i+1</div>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
