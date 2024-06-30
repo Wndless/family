@@ -32,13 +32,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\css\Base\Dad.css">
+    <Content Update="wwwroot\css\Board.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\css\Common.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\css\Gallery\Gallery.css">
+    <Content Update="wwwroot\css\Gallery.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\css\Home\Home.css">

@@ -2,24 +2,35 @@
     Layout = "../Shared/_Layout";
 }
 
-<link rel="stylesheet" href="/css/Base/Dad.min.css"/>
+<link rel="stylesheet" href="/css/Board.min.css"/>
 
 <div class="container">
-    <ul>
+    <ul class="list_item">
         @for(int i=0; i<10; i++)
         {
+            string heart_class = i % 2 == 0 ? "fa-solid fa-heart" : "fa-regular fa-heart";
+
             <li>
                 <div class="board_item">
                     <div class="section">
                         야하하하
                     </div>
                     <div class="board_info">
-                        <a href="#">게시글 제목 @i</a>
-                        <input type="checkbox" id="like" />
-                        <div class="reply">@i+1</div>
+                        <div class="board_title">
+                            <a  href="#">게시글 제목 @i</a>
+                            <h3>@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</h3>
+                        </div>
+                        <div class="board_count">
+                            <i class="@heart_class"></i>
+                            <div class="reply">@i+1</div>
+                        </div>
                     </div>
                 </div>
             </li>
         }
     </ul>
 </div>
+
+
+<!-- fa-solid fa-heart 채워져있는거 -->
+<!-- fa-regular fa-heart 비어있는거 -->

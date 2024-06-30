@@ -34,5 +34,17 @@
     "inputFiles": [
       "wwwroot/css/Base/Dad.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Gallery.min.css",
+    "inputFiles": [
+      "wwwroot/css/Gallery.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Board.min.css",
+    "inputFiles": [
+      "wwwroot/css/Board.css"
+    ]
   }
 ]
